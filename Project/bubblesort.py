@@ -6,21 +6,3 @@ def bubble_sort(arr):
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
     return arr
 
-def get_input_and_sort():
-    print("--- Bubble Sort Algorithm ---")
-    input_str = input("Please Input Number (with space) : ")
-    
-    try:
-        data_to_sort = list(map(int, input_str.split()))
-        
-    except ValueError:
-        print("Error: Input must be only numbers separated by spaces.")
-        return
-
-    print(f"\nInput: {data_to_sort}")
-    sorted_result = bubble_sort(data_to_sort)  
-    
-    print(f"Bubble Sort: {sorted_result}")
-
-if __name__ == "__main__":
-    get_input_and_sort()
