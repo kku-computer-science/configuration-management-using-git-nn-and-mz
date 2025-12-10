@@ -22,5 +22,6 @@ def get_input_and_sort():
     
     print(f"Bubble Sort: {sorted_result}")
 
-if _name_ == "_main_":
+
+if __name__ == "__main__":
     get_input_and_sort()
